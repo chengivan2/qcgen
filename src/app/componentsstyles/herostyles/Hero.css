@@ -1,0 +1,8 @@
+.qc-hero-section {
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+
+}
