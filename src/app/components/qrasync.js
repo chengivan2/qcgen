@@ -1,8 +1,8 @@
-import React from 'react';
-import QRCode from 'qrcode';
+import React from "react";
+import QRCode from "qrcode";
 
 const QRCodeComponent = async ({ url }) => {
-  let qrImageUrl = '';
+  let qrImageUrl = "";
   try {
     qrImageUrl = await QRCode.toDataURL(url);
   } catch (err) {
@@ -11,7 +11,14 @@ const QRCodeComponent = async ({ url }) => {
 
   return (
     <div>
-      {qrImageUrl ? <img src={qrImageUrl} alt="QR Code" /> : <p>Generating QR Code...</p>}
+      {qrImageUrl ? (
+        <img src={qrImageUrl} alt="QR Code" />
+      ) : (
+        <p>Generating QR Code...</p>
+      )}
+      <a href={qrImageUrl} download="qrcode.png">
+        <button>Download QR Code</button>
+      </a>
     </div>
   );
 };
