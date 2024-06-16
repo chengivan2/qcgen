@@ -17,7 +17,7 @@ export const QCHeader = () => {
 
       <div className="qcheader-menu-container">
         <nav className="qcheader-menu-navigation">
-          <Link className="qc-source-link" href="/">Source</Link>
+          <Link className="qc-source-link" href="https://github.com/chengivan2/qcgen">Source</Link>
           <Link className="qc-ivanthedev-link" href="https://ivanthedev.guru">ivanthedev</Link>
         </nav>
       </div>
