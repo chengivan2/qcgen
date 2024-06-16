@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QCFormComponent from './QCForm';
 import QRCodeGenComponent from './qrasync';
+import "../../componentsstyles/herostyles/QCHeroMain.css"
 
 const QCHeroMain = () => {
   const [submittedUrl, setSubmittedUrl] = useState('');
@@ -10,7 +11,7 @@ const QCHeroMain = () => {
   };
 
   return (
-    <div>
+    <div className="qc-hero-main-container">
       <QCFormComponent onQcURLSubmit={handleUrlSubmit} />
       {submittedUrl && <QRCodeGenComponent url={submittedUrl} />}
     </div>

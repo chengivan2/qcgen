@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import "@/app/componentsstyles/herostyles/QCForm.css"
 
 const QCFormComponent = ({ onQcURLSubmit }) => {
   const [qcURL, setQcURL] = useState("");
@@ -13,7 +14,7 @@ const QCFormComponent = ({ onQcURLSubmit }) => {
   return (
     <div className="qc-qr-code-generation">
       <div className="qc-url-form-container">
-        <form onSubmit={handleSubmit}>
+        <form className="qc-url-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="urlInput"
