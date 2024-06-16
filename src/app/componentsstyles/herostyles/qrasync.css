@@ -11,3 +11,27 @@
     width: 350px;
     border-radius: 24px;
 }
+
+.qc-qrcode-download-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    gap: 1em;
+    border-radius: 12px;
+    width: 100%;
+    background-color: hsl(60, 56%, 91%);
+    font-weight: 500;
+}
+
+.qc-scan-me-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .8em 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}

@@ -11,8 +11,8 @@ body {
 }
 
 body {
-  color: #181818;
-  background: #EBE8E4;
+  color: hsl(0, 0%, 9%);
+  background: hsl(35, 26%, 87%);
 }
 
 a {

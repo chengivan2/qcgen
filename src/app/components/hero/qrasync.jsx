@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import QRCode from 'qrcode';
-import '@/app/componentsstyles/herostyles/qrasync.css'
+import React, { useState, useEffect } from "react";
+import { FaDownload } from "react-icons/fa6";
+import QRCode from "qrcode";
+import "@/app/componentsstyles/herostyles/qrasync.css";
 
 const QRCodeGenComponent = ({ url }) => {
-  const [qrImageUrl, setQrImageUrl] = useState('');
+  const [qrImageUrl, setQrImageUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -33,9 +34,11 @@ const QRCodeGenComponent = ({ url }) => {
     <div className="qc-qrcodegencomponent">
       {qrImageUrl && (
         <>
+        <h6 className="qc-scan-me-title">SCAN ME</h6>
           <img className="qc-qrcode-image" src={qrImageUrl} alt="QR Code" />
-          <a href={qrImageUrl} download="qrcode.png">
-            <button>Download QR Code</button>
+          <a href={qrImageUrl} className="qc-qrcode-download-button" download="qrcode.png">
+            <FaDownload />
+            Download QR Code
           </a>
         </>
       )}
