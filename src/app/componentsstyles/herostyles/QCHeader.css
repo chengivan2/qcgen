@@ -50,7 +50,7 @@
   text-underline-offset: 1em;
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-device-width : 820px) {
     .qclogo-container img {
         height: 60px;
         width: 60px;

@@ -50,7 +50,7 @@
     letter-spacing: unset;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 820px) {
     .qc-qr-code-generation {
         position: relative;
         min-width: 100% !important;

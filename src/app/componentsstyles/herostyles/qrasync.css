@@ -36,7 +36,7 @@
   letter-spacing: 1px;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 820px) {
   .qc-qrcode-image {
     height: 280px;
     width: 280px;
