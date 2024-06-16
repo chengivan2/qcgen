@@ -2,7 +2,6 @@
     position: relative;
     min-width: 50%;
     max-width: 50%;
-
 }
 
 .qc-url-form-container .qc-url-form {
@@ -14,7 +13,7 @@
 .qc-url-form .qc-url-input {
     font-size: 18px;
     outline: none;
-    height: 3.2em;
+    height: 3.8em;
     border-radius: 1000px;
     background-color: hsl(0, 0%, 97%);
     border: 1px solid hsl(0, 0%, 97%);
@@ -22,7 +21,7 @@
 }
 
 .qc-url-form .qc-url-input:hover {
-    border: 1px solid hsl(60, 56%, 100%);
+    border: 1px solid hsl(60, 56%, 91%);
 }
 
 .qc-url-form .qc-url-input:active {
@@ -31,9 +30,9 @@
 }
 
 .qc-url-form .qc-url-submit-button {
-    height: 2.4em;
+    height: 2.8em;
     background-color: hsl(60, 56%, 91%);
-    border: none;
+    border: 2px solid hsl(60, 56%, 91%);
     outline: none;
     font-size: 16px;
     border-radius: 1000px;
@@ -41,5 +40,8 @@
 }
 
 .qc-url-form .qc-url-submit-button:hover {
-    
+    background-color: hsl(240, 88%, 90%);
+    border: 2px solid hsl(60, 56%, 91%);
+    font-weight: 500;
+    letter-spacing: 1px;
 }

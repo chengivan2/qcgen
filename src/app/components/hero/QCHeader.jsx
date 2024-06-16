@@ -10,18 +10,17 @@ export const QCHeader = () => {
         <Image
           className="qcgen-generated-qr-code-image"
           src={qcGenLogo}
-          width={96}
-          height={96}
+          width={80}
+          height={80}
           alt="QC Gen Header Logo"
           placeholder="blur"
         />
       </div>
 
       <div className="qcheader-menu-container">
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/">Source</Link>
-          <Link href="https://ivanthedev.guru">ivanthedev</Link>
+        <nav className="qcheader-menu-navigation">
+          <Link className="qc-source-link" href="/">Source</Link>
+          <Link className="qc-ivanthedev-link" href="https://ivanthedev.guru">ivanthedev</Link>
         </nav>
       </div>
     </div>

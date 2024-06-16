@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import QRCode from 'qrcode';
+import '@/app/componentsstyles/herostyles/qrasync.css'
 
 const QRCodeGenComponent = ({ url }) => {
   const [qrImageUrl, setQrImageUrl] = useState('');
@@ -29,10 +30,10 @@ const QRCodeGenComponent = ({ url }) => {
   }
 
   return (
-    <div>
+    <div className="qc-qrcodegencomponent">
       {qrImageUrl && (
         <>
-          <img src={qrImageUrl} alt="QR Code" />
+          <img className="qc-qrcode-image" src={qrImageUrl} alt="QR Code" />
           <a href={qrImageUrl} download="qrcode.png">
             <button>Download QR Code</button>
           </a>

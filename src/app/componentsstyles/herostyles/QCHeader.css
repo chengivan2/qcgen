@@ -8,3 +8,36 @@
     background-color: hsl(60, 56%, 91%);
     padding: 0.8em;
 }
+
+.qclogo-container{
+    padding-left: 1.6em;
+}
+
+.qcheader-menu-container {
+    padding-right: 1.6em;
+}
+
+.qcheader-menu-navigation {
+    display: flex;
+    gap: 40px;
+    color: #181818;
+}
+
+.qc-source-link{
+    font-weight: 600;
+}
+
+.qc-source-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 1em;
+}
+
+.qc-ivanthedev-link {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #616161;
+}
+
+.qc-ivanthedev-link:hover {
+    text-underline-offset: 1em;
+}
