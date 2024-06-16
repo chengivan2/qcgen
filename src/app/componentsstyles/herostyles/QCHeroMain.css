@@ -7,3 +7,10 @@
     justify-content: space-between;
     padding: 4em;
 }
+
+@media only screen and (max-device-width : 768px) {
+    .qc-hero-main-container {
+        flex-direction: column;
+        gap: 3.2em;
+    }
+}

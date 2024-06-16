@@ -1,43 +1,58 @@
 .qc-header-container {
-    position: relative;
-    min-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: hsl(60, 56%, 91%);
-    padding: 0.8em;
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(60, 56%, 91%);
+  padding: 0.8em;
+  box-shadow: 0px 4px 10px 0px rgba(207, 207, 252, 0.5);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(207, 207, 252, 0.5);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(207, 207, 252, 0.5);
 }
 
-.qclogo-container{
-    padding-left: 1.6em;
+.qclogo-container {
+  padding-left: 1.6em;
+}
+
+.qclogo-container img {
+    height: 80px;
+    width: 80px;
 }
 
 .qcheader-menu-container {
-    padding-right: 1.6em;
+  padding-right: 1.6em;
 }
 
 .qcheader-menu-navigation {
-    display: flex;
-    gap: 40px;
-    color: #181818;
+  display: flex;
+  gap: 40px;
+  color: #181818;
 }
 
-.qc-source-link{
-    font-weight: 600;
+.qc-source-link {
+  font-weight: 600;
 }
 
 .qc-source-link:hover {
-    text-decoration: underline;
-    text-underline-offset: 1em;
+  text-decoration: underline;
+  text-underline-offset: 1em;
 }
 
 .qc-ivanthedev-link {
-    text-decoration: underline;
-    letter-spacing: 1px;
-    color: #616161;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #616161;
 }
 
 .qc-ivanthedev-link:hover {
-    text-underline-offset: 1em;
+  text-underline-offset: 1em;
+}
+
+@media only screen and (max-device-width : 768px) {
+    .qclogo-container img {
+        height: 60px;
+        width: 60px;
+    }
 }

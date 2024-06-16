@@ -34,7 +34,7 @@ const QRCodeGenComponent = ({ url }) => {
     <div className="qc-qrcodegencomponent">
       {qrImageUrl && (
         <>
-        <h6 className="qc-scan-me-title">SCAN ME</h6>
+        <h5 className="qc-scan-me-title">SCAN ME</h5>
           <img className="qc-qrcode-image" src={qrImageUrl} alt="QR Code" />
           <a href={qrImageUrl} className="qc-qrcode-download-button" download="qrcode.png">
             <FaDownload />

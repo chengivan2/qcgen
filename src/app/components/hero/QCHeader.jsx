@@ -10,8 +10,6 @@ export const QCHeader = () => {
         <Image
           className="qcgen-generated-qr-code-image"
           src={qcGenLogo}
-          width={80}
-          height={80}
           alt="QC Gen Header Logo"
           placeholder="blur"
         />
