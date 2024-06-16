@@ -49,3 +49,11 @@
 .qc-url-form .qc-url-submit-button:active {
     letter-spacing: unset;
 }
+
+@media only screen and (max-device-width: 768px) {
+    .qc-qr-code-generation {
+        position: relative;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+}
